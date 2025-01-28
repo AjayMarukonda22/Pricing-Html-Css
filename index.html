@@ -3,56 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Pricing Project</title>
     <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="container">
-      <div id="heading">Our Pricing</div>
+    <div class="container">
 
-      <div id="paymentOption">
-         <label class = "switch">Anually</label>
-         <label  class="toggle-switch">
-          <input id="toggle" type="checkbox" />
-          <span class="slider"></span>
-      </label>
-         <label class = " switch">Monthly</label>
-      </div>
-
-      <div id="plan">
-        <div class="option basic">
-          <div class="progrm item">Basic</div>
-          <div class="cost item">
-            <span class="dollar">$</span><span class="price">19.99</span>
-          </div>
-          <div class="storage item">500GB Storge</div>
-          <div class="users item">2 User allowed</div>
-          <div class="sendupto item">Send upto 3 GB</div>
-          <div class="learnmore item">Learn More</div>
+      <header class="header">
+        <h1 class = "heading">Our Pricing</h1>
+        <div class="toggle">
+          <h2 class="plan-duration" id = "annually">Annually</h2>
+          <label class="toggle-switch">
+            <input id="toggle" type="checkbox" class="checkbox" />
+            <span class="slider"></span>
+          </label>
+          <h2 class = "plan-duration" id = "monthly">Monthly</h2>
         </div>
 
-        <div class="option profsnal">
-          <div class="progrm item">Professional</div>
-          <div class="cost item">
-            <span class="dollar">$</span><span class="price">29.99</span>
-          </div>
-          <div class="storage item">1 TB Storge</div>
-          <div class="users item">5 User allowed</div>
-          <div class="sendupto item">Send upto 10 GB</div>
-          <div class="learnmore item">Learn More</div>
-        </div>
-        <div class="option master">
-          <div class="progrm item">Master</div>
-          <div class="cost item">
-            <span class="dollar">$</span><span class="price">39.99</span>
-          </div>
-          <div class="storage item">2 TB Storge</div>
-          <div class="users item">10 User allowed</div>
-          <div class="sendupto item">Send upto 20 GB</div>
-          <div class="learnmore item">Learn More</div>
-        </div>
-      </div>
+      </header>
+
+      <main class = "main">
+
+         <section class = "section1" id = "box">
+          <h2> Basic</h2>
+          <p class = "price"><span class = "dollar">$</span>19.99</p>
+          <ul class = "features">
+            <hr>
+            <li>500 GB Storage</li>
+            <hr>
+            <li>2 Users Allowed</li>
+            <hr>
+            <li>Send up to 3 GB</li>
+            <hr>
+          </ul>
+          <button class = "button" id = "passive-button">LEARN MORE</button>
+         </section>
+
+         <section class = "section2" id = "box">
+          <h2> Professional</h2>
+           <p class = "price"><span class = "dollar">$</span>24.99</p>
+          <ul class = "features">
+            <hr>
+            <li id = "text">1 TB Storage</li>
+            <hr>
+            <li>5 Users Allowed</li>
+            <hr>
+            <li>Send up to 10 GB</li>
+            <hr>
+          </ul>
+          <button class = "button" id = "active-button">LEARN MORE</button>
+         </section>
+
+         <section class = "section3" id = "box">
+          <h2> Master </h2>
+          <p class = "price"><span class = "dollar">$</span>39.99</p>
+          <ul class = "features">
+            <hr>
+            <li>2 TB Storage</li>
+            <hr>
+            <li>10 Users Allowed</li>
+            <hr>
+            <li>Send up to 20 GB</li>
+            <hr>
+          </ul>
+          <button class = "button" id = "passive-button">LEARN MORE</button>
+         </section>
+
+      </main>
+
     </div>
+
   </body>
 </html>
 
